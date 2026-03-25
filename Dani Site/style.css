@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html { scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -65,4 +68,15 @@ section {
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     border: 1px solid #e0d5cb;
     scroll-margin-top: 170px; 
+}
+
+.fotoperfil {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #dccfbf;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
