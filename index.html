@@ -3,106 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniela Coutinho - Psicóloga🗣️</title>
+    <title>Daniela Coutinho — Psicóloga</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <div class="bloco">
-            <h1>Daniela Coutinho - Psicologia Analítica</h1>
-            <h2>Psicóloga Clínica - CRP 05/62767</h2>
-            <p>Atendimento presencial e online:<br>
-               Adolescentes, Adultos e Idosos.</p>
-            
-            <nav class="menu-ancora">
+    <!-- ========== NAVBAR ========== -->
+    <header id="topo">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <span class="logo-nome">Daniela Coutinho</span>
+                <span class="logo-crp">Psicologia Analítica</span>
+            </div>
+            <div class="menu-ancora" id="menu">
                 <a href="#inicio">Início</a>
-                <a href="#sobre">Sobre Mim</a>
+                <a href="#sobre">Sobre</a>
                 <a href="#consultorio">Consultório</a>
                 <a href="#contato">Contato</a>
-            </nav>
-        </div>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
     </header>
 
-    <section id="inicio">
-        <div class="bloco">
-            <h2>Como funciona a Psicoterapia Analítica?</h2><br>
-            <p>
-            A Psicologia Analítica, também conhecida como Terapia Jungiana, é uma abordagem focada no autoconhecimento e equilíbrio emocional. 
-            Ela vai além de "resolver problemas", ela busca entender a pessoa como um todo, ajudando a reconhecer padrões de 
-            comportamento, lidar melhor com emoções difíceis e desenvolver habilidades pessoais que podem estar escondidas, 
-            tornando a pessoa mais consciente de si mesma, ampliando a compreensão sobre si e com mais recursos para lidar com as próprias escolhas e desafios de forma mais funcional dentro da sua realidade. 
-            </p>
-            <img src="jung2.png" class="foto-jung" alt="Jung"> 
-        </div>
-    </section>
-
-    <section id="sobre">
-        <div class="bloco">
-            <h2>Sobre Mim</h2>
-            <p>
-                Meu nome é Daniela, sou formada em Psicologia com foco em Psicologia Analítica (junguiana) 
-                e tenho pós-graduação em Saúde Mental. Atendo presencialmente e online adolescentes, jovens, adultos e idosos, oferecendo um espaço de escuta, 
-                reflexão e desenvolvimento pessoal. O trabalho é voltado para compreender melhor as emoções, os padrões de comportamento 
-                e os desafios do dia a dia, buscando formas mais conscientes de lidar com cada fase da vida. 
-            </p>
-            <img src="danifoto2.jpeg" class="foto-redonda" alt="Daniela Coutinho">
-        </div>
-    </section>
-
-    <section id="consultorio">
-        <div class="bloco">
-            <h2>Consultório</h2>
-            <p>Este espaço foi pensado para lhe proporcionar conforto, segurança e principalmente privacidade durante os seus atendimentos. A Psicologia Analítica vai lhe permitir um autoconhecimento ainda mais profundo e será um importante aliado no enfrentamento de questões como ansiedade, depressão, insegurança entre outras questões, lhe trazendo mais autonomia e segurança melhorando a forma como você se relaciona com o mundo.</p>
-            <br>
-
-            <div class="fotos">
-                <img src="consultorio1.jpg" alt="Consultório">
-                <img src="consultorio2.jpeg" alt="Consultório">
-                <img src="consultorio3.jpeg" alt="Consultório">
-            </div>
-
-            <div class="localizacao-bloco">
-                <div class="texto-endereco">
-                    <h3>📍 Onde Atendemos:</h3>
-                    <p><strong>Consultório Daniela Coutinho</strong></p>
-                    <p>Rua Padre Elias Gorayeb - Sala 501 - Saens Pena</p>
-                    <p>Rio de Janeiro - RJ</p>
+    <!-- ========== HERO ========== -->
+    <section id="inicio" class="hero">
+        <div class="hero-inner">
+            <div class="hero-texto reveal">
+                <p class="eyebrow">Psicologia Analítica Junguiana</p>
+                <h1>Um espaço para <em>conhecer-se</em><br>com mais profundidade</h1>
+                <p class="hero-sub">Atendimento online e presencial para adolescentes, adultos e idosos — Rio de Janeiro.</p>
+                <div class="hero-acoes">
+                    <a href="#contato" class="btn-primario">Entre em contato</a>
+                    <a href="#sobre" class="btn-ghost">Saiba mais</a>
                 </div>
-
-                <div class="mapa-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.8475841443694!2d-43.2355529!3d-22.9189855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e5967000001%3A0x123456789!2sR.%20Pe.%20Elias%20Gorayeb%2C%2015%20-%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1712345678910" 
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+            </div>
+            <div class="hero-img-wrap reveal reveal-delay">
+                <div class="hero-img-frame">
+                    <img src="jung2.png" class="foto-hero" alt="Carl Gustav Jung">
+                    <div class="hero-img-badge">
+                        <i class="fas fa-quote-left"></i>
+                        <span>«Quem olha para fora, sonha.<br>Quem olha para dentro, desperta.»</span>
+                        <small>— C. G. Jung</small>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="contato">
-        <div class="bloco">
-            <h2>Contato</h2>
-            <p>Entre em contato para agendar sua consulta:</p>
-            <a href="https://wa.me/5521995512802" class="botao-whatsapp">
-                <span>💬</span> Falar no WhatsApp
-            </a>
+        <div class="hero-scroll-hint">
+            <span>Role para explorar</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
+    <!-- ========== COMO FUNCIONA ========== -->
+    <section id="o-que-e" class="secao-clara">
+        <div class="bloco">
+            <p class="eyebrow reveal">Como funciona</p>
+            <h2 class="reveal">O que é a Psicoterapia Analítica?</h2>
+            <p class="texto-principal reveal">A Psicologia Analítica — também chamada de Terapia Jungiana — é uma abordagem voltada ao autoconhecimento e ao equilíbrio emocional. Ela não busca apenas "resolver problemas": vai além, ajudando a reconhecer padrões de comportamento, acolher emoções difíceis e desenvolver recursos internos que a pessoa ainda não reconhece em si mesma.</p>
+            <div class="cards-grid">
+                <div class="card-feature reveal">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Autoconhecimento</h3>
+                    <p>Compreenda padrões emocionais e comportamentais que moldam a sua história e suas relações.</p>
+                </div>
+                <div class="card-feature reveal reveal-delay">
+                    <div class="card-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Equilíbrio emocional</h3>
+                    <p>Desenvolva ferramentas para lidar com ansiedade, conflitos internos e transições de vida.</p>
+                </div>
+                <div class="card-feature reveal reveal-delay-2">
+                    <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Desenvolvimento pessoal</h3>
+                    <p>Ative potenciais internos e construa uma relação mais saudável e consciente consigo mesmo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section id="sobre" class="secao-escura">
+        <div class="bloco bloco-sobre">
+            <div class="sobre-img-wrap reveal">
+                <img src="danifoto2.jpeg" class="foto-redonda" alt="Daniela Coutinho">
+            </div>
+            <div class="sobre-texto reveal reveal-delay">
+                <p class="eyebrow eyebrow-claro">Sobre mim</p>
+                <h2>Daniela Coutinho</h2>
+                <p>Sou formada em Psicologia com foco em Psicologia Analítica (Junguiana) e tenho pós-graduação em Saúde Mental. Atendo presencialmente e online adolescentes, jovens, adultos e idosos, oferecendo um espaço de escuta, reflexão e desenvolvimento pessoal.</p>
+                <p>O trabalho terapêutico é voltado para compreender melhor as emoções e os desafios do cotidiano — sempre respeitando o ritmo e a singularidade de cada pessoa.</p>
+                <ul class="lista-formacao">
+                    <li><i class="fas fa-graduation-cap"></i> Graduação em Psicologia</li>
+                    <li><i class="fas fa-certificate"></i> Pós-graduação em Saúde Mental</li>
+                    <li><i class="fas fa-id-badge"></i> CRP 05/62767</li>
+                    <li><i class="fas fa-laptop"></i> Atendimento presencial e online</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONSULTÓRIO ========== -->
+    <section id="consultorio" class="secao-clara">
+        <div class="bloco">
+            <p class="eyebrow reveal">Onde nos encontramos</p>
+            <h2 class="reveal">Consultório</h2>
+            <p class="texto-principal reveal">Para quem optar pelo atendimento presencial, estamos localizados na Praça Saens Peña — um espaço pensado para oferecer conforto, segurança e privacidade durante os atendimentos.</p>
+            <div class="fotos-consultorio reveal">
+                <img src="consultorio1.jpg" alt="Sala de espera do consultório">
+                <img src="consultorio2.jpeg" alt="Sala de atendimento">
+                <img src="consultorio3.jpeg" alt="Detalhes do consultório">
+            </div>
+            <div class="mapa-container reveal">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.210452367123!2d-43.2355523!3d-22.9064132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e593e2b2455%3A0xc3c544d65600a9!2sRua%20Padre%20Elias%20Gorayeb%20-%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1713880000000!5m2!1spt-BR!2sbr"
+                    width="100%" height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    title="Localização do consultório">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section id="contato" class="secao-contato">
+        <div class="bloco-contato">
+            <div class="contato-col-esq reveal">
+                <p class="eyebrow eyebrow-claro">Vamos conversar</p>
+                <h2>Inicie seu processo terapêutico</h2>
+                <p>Ficou com alguma dúvida sobre os atendimentos? Entre em contato pelos canais abaixo — responderei com prazer.</p>
+                <div class="social-links">
+                    <a href="mailto:danielamcoutinho.psi@gmail.com" class="social-icon-box" title="E-mail" aria-label="Enviar e-mail">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a href="https://www.instagram.com/danielamcoutinho.psi?igsh=eXVrcWhmdG1oZmdl" class="social-icon-box" title="Instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5521995512802" class="social-icon-box" title="WhatsApp" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://substack.com/@psiquealmaevida" class="social-icon-box" title="Substack" aria-label="Substack">
+                        <i class="fas fa-bookmark"></i>
+                    </a>
+                </div>
+                <div class="links-diretos-contato">
+                    <p><i class="far fa-envelope"></i>danielamcoutinho.psi@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (21) 99551-2802</p>
+                </div>
+            </div>
+            <div class="contato-col-dir reveal reveal-delay">
+                <div class="card-credencial">
+                    <h3>Daniela Coutinho</h3>
+                    <p>Psicóloga Clínica | CRP 05/62767</p>
+                    <p>Psicologia Analítica Junguiana</p>
+                    <p>Especialista em Saúde Mental</p>
+                    <a href="https://wa.me/5521995512802" class="btn-wpp" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
     <footer>
-        <div class="rodape-conteudo">
-            <div class="rodape-info">
-                <h3>Daniela Coutinho</h3>
-                <p>Psicóloga Clínica | CRP 05/62767</p>
-                <p>Psicologia Analítica Junguiana</p>
-            </div>
-            
-             <div class="rodape-contato">
-                <p>📍 Saens Pena, Rio de Janeiro - RJ</p>
-                <p>&copy; 2026 Daniela Coutinho</p>
-            </div>
+        <div class="footer-inner">
+            <span>© 2026 Daniela Coutinho. Todos os direitos reservados.</span>
+            <span>CRP 05/62767 — Rio de Janeiro, RJ</span>
         </div>
     </footer>
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('menu-aberto');
+            hamburger.classList.toggle('ativo');
+        });
+        document.querySelectorAll('.menu-ancora a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('menu-aberto');
+                hamburger.classList.remove('ativo');
+            });
+        });
+
+        const headerEl = document.getElementById('topo');
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.menu-ancora a');
+        window.addEventListener('scroll', () => {
+            headerEl.classList.toggle('scrolled', window.scrollY > 40);
+            let current = '';
+            sections.forEach(sec => {
+                if (window.scrollY >= sec.offsetTop - 140) current = sec.getAttribute('id');
+            });
+            navLinks.forEach(link => {
+                link.classList.toggle('ativo', link.getAttribute('href') === '#' + current);
+            });
+        });
+
+        const revealEls = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visivel');
+                    revealObserver.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        revealEls.forEach(el => revealObserver.observe(el));
+    </script>
 </body>
 </html>
+       
