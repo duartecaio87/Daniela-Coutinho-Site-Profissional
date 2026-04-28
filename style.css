@@ -113,7 +113,6 @@ header.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.1); }
     line-height: 1.25;
 }
 
-/* ⬇️ MEXA AQUI PARA AJUSTAR O TAMANHO */
 .logo-nome {
     font-family: var(--fonte-titulo);
     font-size: 1.6rem;
@@ -121,11 +120,13 @@ header.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.1); }
     color: var(--azul-escuro);
     letter-spacing: 0.01em;
 }
+
 .logo-crp {
     font-size: 0.75rem;
     letter-spacing: 0.12em;
     color: var(--texto-leve);
     text-transform: uppercase;
+    margin-top: 4px;  /* ← afasta o subtítulo do nome */
 }
 
 .menu-ancora { display: flex; gap: 2px; }
@@ -475,7 +476,7 @@ header.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.1); }
     color: var(--branco);
     font-size: 1.5rem;
     font-weight: 400;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
 }
 .card-credencial > p {
     color: rgba(255,255,255,0.55);
@@ -484,6 +485,16 @@ header.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.1); }
     line-height: 1.5;
 }
 .card-credencial > p:first-of-type { color: rgba(255,255,255,0.75); }
+
+.card-agenda-texto {
+    color: rgba(255,255,255,0.6) !important;
+    font-size: 0.85rem !important;
+    line-height: 1.6;
+    margin-top: 14px;
+}
+.card-agenda-texto strong {
+    color: rgba(255,255,255,0.85);
+}
 
 .btn-wpp {
     display: inline-flex;
